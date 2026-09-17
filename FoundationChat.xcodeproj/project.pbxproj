@@ -10,6 +10,7 @@
 		05AEA57DF281E7CF1E55DEB1 /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C081A253146E2DC14D50749 /* Chat.swift */; };
 		08551381E19EA11A75CB14EE /* PromptPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435110792B7B9AC13BD12BD1 /* PromptPreset.swift */; };
 		10F88EA57AC501F7DADBF812 /* ContextUsageBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FDF32F52C56CEACA844AB7 /* ContextUsageBar.swift */; };
+		1D3359681A6BE87F9C010433 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9719E389266F5FF538B6E181 /* Assets.xcassets */; };
 		320916CB9C1ACC2475A31E14 /* MessageBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027DF66DEA6632BC10552E1 /* MessageBubbleView.swift */; };
 		5856E445DED5683575B8BDA5 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB69D2761505D015E6458F8 /* ChatMessage.swift */; };
 		655077CED52AB63D939C4119 /* MessageInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7024A1573A64884D0A4A257 /* MessageInputView.swift */; };
@@ -39,6 +40,7 @@
 		62DEA47DFAD2883DB199C1B0 /* ChatDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailView.swift; sourceTree = "<group>"; };
 		9027DF66DEA6632BC10552E1 /* MessageBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubbleView.swift; sourceTree = "<group>"; };
 		9345232CA78C6B6D5B4CB487 /* ModelCatalog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelCatalog.swift; sourceTree = "<group>"; };
+		9719E389266F5FF538B6E181 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B7024A1573A64884D0A4A257 /* MessageInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInputView.swift; sourceTree = "<group>"; };
 		CFB69D2761505D015E6458F8 /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
 		D2FBC0F5650EB6F6B3CAA55D /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
@@ -76,6 +78,14 @@
 			path = Sources;
 			sourceTree = "<group>";
 		};
+		5AC76FDDC0568C4B4CED1399 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9719E389266F5FF538B6E181 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		69578EBF7C24F9A67E00A721 /* App */ = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +108,7 @@
 		BECA627C5902DA344DBAB105 = {
 			isa = PBXGroup;
 			children = (
+				5AC76FDDC0568C4B4CED1399 /* Resources */,
 				56C1433D3B4839E241A1381B /* Sources */,
 				3F68D387716DA4D57723CB2E /* Products */,
 			);
@@ -127,6 +138,7 @@
 			buildConfigurationList = 1DBAFEE2552C92DDDFA39A61 /* Build configuration list for PBXNativeTarget "FoundationChat" */;
 			buildPhases = (
 				E75FF8726CD7688CB537311D /* Sources */,
+				B3C8FE9E7F804F3AD9F272C3 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -173,6 +185,17 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		B3C8FE9E7F804F3AD9F272C3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D3359681A6BE87F9C010433 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		E75FF8726CD7688CB537311D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -216,7 +239,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 26.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = de.hgi.FoundationChat;
 				PRODUCT_NAME = FoundationChat;
 				SDKROOT = macosx;
@@ -367,7 +390,7 @@
 					"@executable_path/../Frameworks",
 				);
 				MACOSX_DEPLOYMENT_TARGET = 26.0;
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = de.hgi.FoundationChat;
 				PRODUCT_NAME = FoundationChat;
 				SDKROOT = macosx;
