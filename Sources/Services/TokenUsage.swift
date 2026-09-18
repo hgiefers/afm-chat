@@ -30,7 +30,7 @@ struct TokenUsage {
         // hier für beide Modell-Arten derselbe Tokenizer als Schätzung verwendet.
         // Die Methode selbst gibt es erst ab macOS 26.4 – auf älteren Ständen bleibt
         // die Anzeige einfach ausgeblendet.
-        guard #available(macOS 26.4, *) else { return nil }
+        guard #available(macOS 26.4, iOS 26.4, *) else { return nil }
         do {
             let draftTokens = try await SystemLanguageModel.default.tokenCount(for: draft)
 
@@ -51,7 +51,7 @@ struct TokenUsage {
     }
 
     private static func contextSize(for kind: ModelKind) async throws -> Int {
-        if #available(macOS 27.0, *), kind == .privateCloudCompute {
+        if #available(macOS 27.0, iOS 27.0, *), kind == .privateCloudCompute {
             return try await PrivateCloudComputeLanguageModel().contextSize
         }
         return SystemLanguageModel.default.contextSize

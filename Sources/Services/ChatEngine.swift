@@ -69,7 +69,7 @@ final class ChatEngine {
     /// überschrittenes Kontextfenster zurückgeht. Auf macOS 27+ liefert die API
     /// exakte Token-Zahlen, auf macOS 26 nur eine Debug-Beschreibung.
     private static func contextOverflowMessage(for error: Error) -> String? {
-        if #available(macOS 27.0, *),
+        if #available(macOS 27.0, iOS 27.0, *),
            let lmError = error as? LanguageModelError,
            case .contextSizeExceeded(let details) = lmError {
             return "Kontext-Limit überschritten (\(details.tokenCount)/\(details.contextSize) Tokens). Starte einen neuen Chat oder kürze deine Nachricht."
@@ -92,7 +92,7 @@ final class ChatEngine {
     private static func makeSession(kind: ModelKind, transcriptData: Data?, instructions: String) -> LanguageModelSession {
         let transcript = transcriptData.flatMap { try? JSONDecoder().decode(Transcript.self, from: $0) }
 
-        if #available(macOS 27.0, *), kind == .privateCloudCompute {
+        if #available(macOS 27.0, iOS 27.0, *), kind == .privateCloudCompute {
             let model = PrivateCloudComputeLanguageModel()
             if let transcript {
                 return LanguageModelSession(model: model, transcript: transcript)

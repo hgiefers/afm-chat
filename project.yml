@@ -51,3 +51,28 @@ targets:
         SWIFT_EMIT_LOC_STRINGS: YES
         COMBINE_HIDPI_IMAGES: YES
         CODE_SIGN_ENTITLEMENTS: Sources/App/FoundationChat.entitlements
+
+  # Nur ein Kompilier-Spike, um die iOS-Portierbarkeit empirisch zu prüfen –
+  # kein vollwertiges, geplantes iOS-Target (kein eigenes Icon/Launch-Screen).
+  FoundationChatiOSSpike:
+    type: application
+    platform: iOS
+    deploymentTarget: "26.0"
+    sources:
+      - path: Sources
+    info:
+      path: Generated/Info-iOS.plist
+      properties:
+        CFBundleDisplayName: FoundationChat
+        CFBundleShortVersionString: "0.1"
+        CFBundleVersion: "1"
+        UILaunchScreen: {}
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: de.hgi.FoundationChat.iosspike
+        PRODUCT_NAME: FoundationChatiOSSpike
+        MARKETING_VERSION: "0.1"
+        CURRENT_PROJECT_VERSION: "1"
+        GENERATE_INFOPLIST_FILE: NO
+        SWIFT_EMIT_LOC_STRINGS: YES
+        CODE_SIGN_ENTITLEMENTS: ""

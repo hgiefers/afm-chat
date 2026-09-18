@@ -1,5 +1,7 @@
-import AppKit
 import SwiftUI
+
+#if os(macOS)
+import AppKit
 
 /// Mehrzeiliges Eingabefeld auf AppKit-Basis, weil SwiftUIs `TextField`/`onKeyPress`
 /// die Return-Taste bei einem mehrzeiligen Feld intern verschluckt, bevor sich
@@ -76,3 +78,67 @@ struct ChatInputTextView: NSViewRepresentable {
         }
     }
 }
+
+#elseif os(iOS)
+import UIKit
+
+/// iOS-Variante: Touch-Tastaturen kennen kein verlässliches "Shift"-Signal beim
+/// Tippen von Return, daher gilt hier die auf iOS übliche Konvention – Return
+/// fügt immer einen Zeilenumbruch ein, gesendet wird über den sichtbaren
+/// Senden-Button. An eine externe Tastatur angeschlossen (iPad) sendet
+/// zusätzlich ⌘+Return, per `UIKeyCommand`.
+struct ChatInputTextView: UIViewRepresentable {
+    @Binding var text: String
+    var isDisabled: Bool
+    var onSubmit: () -> Void
+
+    func makeUIView(context: Context) -> UITextView {
+        let textView = SubmittableTextView()
+        textView.delegate = context.coordinator
+        textView.font = .preferredFont(forTextStyle: .body)
+        textView.backgroundColor = .clear
+        textView.isScrollEnabled = true
+        textView.textContainerInset = UIEdgeInsets(top: 6, left: 0, bottom: 6, right: 0)
+        textView.onCommandReturn = { context.coordinator.onSubmit() }
+        return textView
+    }
+
+    func updateUIView(_ textView: UITextView, context: Context) {
+        if textView.text != text {
+            textView.text = text
+        }
+        textView.isEditable = !isDisabled
+        context.coordinator.onSubmit = onSubmit
+    }
+
+    func makeCoordinator() -> Coordinator {
+        Coordinator(text: $text, onSubmit: onSubmit)
+    }
+
+    final class Coordinator: NSObject, UITextViewDelegate {
+        var text: Binding<String>
+        var onSubmit: () -> Void
+
+        init(text: Binding<String>, onSubmit: @escaping () -> Void) {
+            self.text = text
+            self.onSubmit = onSubmit
+        }
+
+        func textViewDidChange(_ textView: UITextView) {
+            text.wrappedValue = textView.text
+        }
+    }
+
+    private final class SubmittableTextView: UITextView {
+        var onCommandReturn: (() -> Void)?
+
+        override var keyCommands: [UIKeyCommand]? {
+            [UIKeyCommand(input: "\r", modifierFlags: .command, action: #selector(handleCommandReturn))]
+        }
+
+        @objc private func handleCommandReturn() {
+            onCommandReturn?()
+        }
+    }
+}
+#endif

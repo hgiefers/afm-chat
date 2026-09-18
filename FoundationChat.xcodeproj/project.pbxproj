@@ -11,18 +11,34 @@
 		08551381E19EA11A75CB14EE /* PromptPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435110792B7B9AC13BD12BD1 /* PromptPreset.swift */; };
 		10F88EA57AC501F7DADBF812 /* ContextUsageBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FDF32F52C56CEACA844AB7 /* ContextUsageBar.swift */; };
 		1D3359681A6BE87F9C010433 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9719E389266F5FF538B6E181 /* Assets.xcassets */; };
+		2A917065393C3F8AA2D9A380 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FBC0F5650EB6F6B3CAA55D /* EmptyStateView.swift */; };
 		320916CB9C1ACC2475A31E14 /* MessageBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027DF66DEA6632BC10552E1 /* MessageBubbleView.swift */; };
+		48A4093484CDB9EE47D3724B /* ChatEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7B4FD077BECDB605509F91 /* ChatEngine.swift */; };
+		4F18BD3AB720E7191EF0174B /* SystemPromptSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B42C6B93B6F5C3600FA18A /* SystemPromptSheet.swift */; };
 		5856E445DED5683575B8BDA5 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB69D2761505D015E6458F8 /* ChatMessage.swift */; };
+		5886EA61B7A84FECC0B08B22 /* ChatDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DEA47DFAD2883DB199C1B0 /* ChatDetailView.swift */; };
 		655077CED52AB63D939C4119 /* MessageInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7024A1573A64884D0A4A257 /* MessageInputView.swift */; };
+		6B6B488B4DD307CCCA4F9B62 /* PromptPreset.swift in Sources */ = {isa = PBXBuildFile; fileRef = 435110792B7B9AC13BD12BD1 /* PromptPreset.swift */; };
 		6B705A802E4396565E5CDE21 /* ChatDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62DEA47DFAD2883DB199C1B0 /* ChatDetailView.swift */; };
+		6F0E976E5124C35FC6B872CD /* Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C081A253146E2DC14D50749 /* Chat.swift */; };
+		7C8549B08E612066229C0701 /* MessageBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9027DF66DEA6632BC10552E1 /* MessageBubbleView.swift */; };
+		81E82D0AFAA99469D25AA555 /* MessageInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7024A1573A64884D0A4A257 /* MessageInputView.swift */; };
+		845FB3936C6A0B7C33A874EB /* TokenUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C83631E9128D57073B01EB2 /* TokenUsage.swift */; };
+		942AE9BEA5064817249E87CA /* ModelCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9345232CA78C6B6D5B4CB487 /* ModelCatalog.swift */; };
 		9D51D71130BE3A10506FEA9D /* TokenUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C83631E9128D57073B01EB2 /* TokenUsage.swift */; };
 		9E6F0A316DE66BB242DE3292 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE8A3D755BCFDC632C8D78C /* SidebarView.swift */; };
+		A12CE5FEEFF0B647BF13439F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A9CF6D85D3FBE119A81954 /* ContentView.swift */; };
 		AD3E97F665ADC615B0AB2CBF /* ChatEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A7B4FD077BECDB605509F91 /* ChatEngine.swift */; };
 		AFBD3C48931D499A43E377E3 /* FoundationChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4A1E6D1D866D141A599C0E /* FoundationChatApp.swift */; };
 		C0DFE3E75B8F53FB598DFD7E /* SystemPromptSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B42C6B93B6F5C3600FA18A /* SystemPromptSheet.swift */; };
 		C64566AF07BD253FBC248C0D /* ModelCatalog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9345232CA78C6B6D5B4CB487 /* ModelCatalog.swift */; };
 		C8BEE250F6AC43016C0EB4ED /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09A9CF6D85D3FBE119A81954 /* ContentView.swift */; };
+		D3FAB7090BA5B783FBA5B475 /* ContextUsageBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FDF32F52C56CEACA844AB7 /* ContextUsageBar.swift */; };
+		D43B16C43348FD60DD32A1D1 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB69D2761505D015E6458F8 /* ChatMessage.swift */; };
+		D643450AC8D1C67AA8EE5221 /* ChatInputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D27C4B9308A104F39152C2D /* ChatInputTextView.swift */; };
 		E7D809BE03C05C0892FB788C /* ChatInputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D27C4B9308A104F39152C2D /* ChatInputTextView.swift */; };
+		ED42AF8A8C4C82F85A9B4534 /* FoundationChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4A1E6D1D866D141A599C0E /* FoundationChatApp.swift */; };
+		EFDDDCF74B8DF5AE90425E0B /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE8A3D755BCFDC632C8D78C /* SidebarView.swift */; };
 		FE5AFA747324C9DF86FC182D /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2FBC0F5650EB6F6B3CAA55D /* EmptyStateView.swift */; };
 /* End PBXBuildFile section */
 
@@ -36,6 +52,7 @@
 		3D27C4B9308A104F39152C2D /* ChatInputTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInputTextView.swift; sourceTree = "<group>"; };
 		435110792B7B9AC13BD12BD1 /* PromptPreset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptPreset.swift; sourceTree = "<group>"; };
 		4E4A1E6D1D866D141A599C0E /* FoundationChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationChatApp.swift; sourceTree = "<group>"; };
+		54E629AEE07E75F18BF5A84E /* FoundationChatiOSSpike.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = FoundationChatiOSSpike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CE8A3D755BCFDC632C8D78C /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
 		62DEA47DFAD2883DB199C1B0 /* ChatDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailView.swift; sourceTree = "<group>"; };
 		9027DF66DEA6632BC10552E1 /* MessageBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubbleView.swift; sourceTree = "<group>"; };
@@ -53,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				F64964234D930C557070BF52 /* FoundationChat.app */,
+				54E629AEE07E75F18BF5A84E /* FoundationChatiOSSpike.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -151,6 +169,23 @@
 			productReference = F64964234D930C557070BF52 /* FoundationChat.app */;
 			productType = "com.apple.product-type.application";
 		};
+		7ABA00CBCFC8E27482013A02 /* FoundationChatiOSSpike */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C9882779208B59888E05164D /* Build configuration list for PBXNativeTarget "FoundationChatiOSSpike" */;
+			buildPhases = (
+				D57E7E6A2A719A1F8ACDEB8C /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FoundationChatiOSSpike;
+			packageProductDependencies = (
+			);
+			productName = FoundationChatiOSSpike;
+			productReference = 54E629AEE07E75F18BF5A84E /* FoundationChatiOSSpike.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -161,6 +196,10 @@
 				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					3844DA2CE006AFA77C2C3208 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+					7ABA00CBCFC8E27482013A02 = {
 						DevelopmentTeam = "";
 						ProvisioningStyle = Manual;
 					};
@@ -181,6 +220,7 @@
 			projectRoot = "";
 			targets = (
 				3844DA2CE006AFA77C2C3208 /* FoundationChat */,
+				7ABA00CBCFC8E27482013A02 /* FoundationChatiOSSpike */,
 			);
 		};
 /* End PBXProject section */
@@ -197,6 +237,29 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D57E7E6A2A719A1F8ACDEB8C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6F0E976E5124C35FC6B872CD /* Chat.swift in Sources */,
+				5886EA61B7A84FECC0B08B22 /* ChatDetailView.swift in Sources */,
+				48A4093484CDB9EE47D3724B /* ChatEngine.swift in Sources */,
+				D643450AC8D1C67AA8EE5221 /* ChatInputTextView.swift in Sources */,
+				D43B16C43348FD60DD32A1D1 /* ChatMessage.swift in Sources */,
+				A12CE5FEEFF0B647BF13439F /* ContentView.swift in Sources */,
+				D3FAB7090BA5B783FBA5B475 /* ContextUsageBar.swift in Sources */,
+				2A917065393C3F8AA2D9A380 /* EmptyStateView.swift in Sources */,
+				ED42AF8A8C4C82F85A9B4534 /* FoundationChatApp.swift in Sources */,
+				7C8549B08E612066229C0701 /* MessageBubbleView.swift in Sources */,
+				81E82D0AFAA99469D25AA555 /* MessageInputView.swift in Sources */,
+				942AE9BEA5064817249E87CA /* ModelCatalog.swift in Sources */,
+				6B6B488B4DD307CCCA4F9B62 /* PromptPreset.swift in Sources */,
+				EFDDDCF74B8DF5AE90425E0B /* SidebarView.swift in Sources */,
+				4F18BD3AB720E7191EF0174B /* SystemPromptSheet.swift in Sources */,
+				845FB3936C6A0B7C33A874EB /* TokenUsage.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		E75FF8726CD7688CB537311D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -246,6 +309,29 @@
 				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
 			name = Debug;
+		};
+		4A8FB6C4D4E02D24DD8BA1DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Generated/Info-iOS.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = de.hgi.FoundationChat.iosspike;
+				PRODUCT_NAME = FoundationChatiOSSpike;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
 		};
 		72691CBDCC60D439BADA4755 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -300,7 +386,6 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 6.0;
@@ -367,7 +452,6 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 6.0;
@@ -398,6 +482,29 @@
 			};
 			name = Release;
 		};
+		BAAC043371A18EE334D38205 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Generated/Info-iOS.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = de.hgi.FoundationChat.iosspike;
+				PRODUCT_NAME = FoundationChatiOSSpike;
+				SDKROOT = iphoneos;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -415,6 +522,15 @@
 			buildConfigurations = (
 				358FAA77DD24556E327CCA3A /* Debug */,
 				AF70840F72CF09BF78B2613E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C9882779208B59888E05164D /* Build configuration list for PBXNativeTarget "FoundationChatiOSSpike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAAC043371A18EE334D38205 /* Debug */,
+				4A8FB6C4D4E02D24DD8BA1DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Debug;

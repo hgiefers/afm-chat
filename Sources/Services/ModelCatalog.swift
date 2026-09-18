@@ -61,7 +61,7 @@ final class ModelCatalog {
             )
         )
 
-        if #available(macOS 27.0, *) {
+        if #available(macOS 27.0, iOS 27.0, *) {
             let cloud = PrivateCloudComputeLanguageModel()
             result.append(
                 ModelStatus(
@@ -93,7 +93,7 @@ final class ModelCatalog {
         }
     }
 
-    @available(macOS 27.0, *)
+    @available(macOS 27.0, iOS 27.0, *)
     private static func describe(_ availability: PrivateCloudComputeLanguageModel.Availability) -> String {
         switch availability {
         case .available:
