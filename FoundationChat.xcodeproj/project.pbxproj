@@ -53,7 +53,7 @@
 		3D27C4B9308A104F39152C2D /* ChatInputTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatInputTextView.swift; sourceTree = "<group>"; };
 		435110792B7B9AC13BD12BD1 /* PromptPreset.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptPreset.swift; sourceTree = "<group>"; };
 		4E4A1E6D1D866D141A599C0E /* FoundationChatApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoundationChatApp.swift; sourceTree = "<group>"; };
-		54E629AEE07E75F18BF5A84E /* FoundationChatiOSSpike.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = FoundationChatiOSSpike.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		54E629AEE07E75F18BF5A84E /* FoundationChatiOSSpike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoundationChatiOSSpike.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CE8A3D755BCFDC632C8D78C /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
 		62DEA47DFAD2883DB199C1B0 /* ChatDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatDetailView.swift; sourceTree = "<group>"; };
 		9027DF66DEA6632BC10552E1 /* MessageBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubbleView.swift; sourceTree = "<group>"; };
@@ -202,7 +202,6 @@
 						ProvisioningStyle = Manual;
 					};
 					7ABA00CBCFC8E27482013A02 = {
-						DevelopmentTeam = "";
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -328,7 +327,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 743XTDT8YP;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Generated/Info-iOS.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
@@ -502,7 +501,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 743XTDT8YP;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Generated/Info-iOS.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
