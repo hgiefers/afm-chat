@@ -76,3 +76,7 @@ targets:
         GENERATE_INFOPLIST_FILE: NO
         SWIFT_EMIT_LOC_STRINGS: YES
         CODE_SIGN_ENTITLEMENTS: ""
+        # Für ein echtes iPhone reicht Ad-hoc (aus den base-Settings) nicht –
+        # Xcode fragt beim ersten Ausführen automatisch nach deinem Apple-ID-Team.
+        CODE_SIGN_STYLE: Automatic
+        DEVELOPMENT_TEAM: ""
