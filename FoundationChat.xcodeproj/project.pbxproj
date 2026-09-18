@@ -36,6 +36,7 @@
 		D3FAB7090BA5B783FBA5B475 /* ContextUsageBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FDF32F52C56CEACA844AB7 /* ContextUsageBar.swift */; };
 		D43B16C43348FD60DD32A1D1 /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = CFB69D2761505D015E6458F8 /* ChatMessage.swift */; };
 		D643450AC8D1C67AA8EE5221 /* ChatInputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D27C4B9308A104F39152C2D /* ChatInputTextView.swift */; };
+		DAA0D2E62EC885416A01E697 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9719E389266F5FF538B6E181 /* Assets.xcassets */; };
 		E7D809BE03C05C0892FB788C /* ChatInputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D27C4B9308A104F39152C2D /* ChatInputTextView.swift */; };
 		ED42AF8A8C4C82F85A9B4534 /* FoundationChatApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E4A1E6D1D866D141A599C0E /* FoundationChatApp.swift */; };
 		EFDDDCF74B8DF5AE90425E0B /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE8A3D755BCFDC632C8D78C /* SidebarView.swift */; };
@@ -174,6 +175,7 @@
 			buildConfigurationList = C9882779208B59888E05164D /* Build configuration list for PBXNativeTarget "FoundationChatiOSSpike" */;
 			buildPhases = (
 				D57E7E6A2A719A1F8ACDEB8C /* Sources */,
+				C8590BAAEE8769BFDDF0578A /* Resources */,
 			);
 			buildRules = (
 			);
@@ -231,6 +233,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D3359681A6BE87F9C010433 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C8590BAAEE8769BFDDF0578A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAA0D2E62EC885416A01E697 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,37 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <!-- Für iOS ohne eingebackene Rundung: iOS maskiert die Ecken selbst,
+       daher hier randlos schwarz statt rx=210 wie in AppIcon.svg (macOS). -->
+  <rect x="0" y="0" width="1024" height="1024" fill="#141414"/>
+
+  <!-- Speech bubble outline -->
+  <path d="
+      M 300 250
+      h 424
+      a 110 110 0 0 1 110 110
+      v 300
+      a 110 110 0 0 1 -110 110
+      h -300
+      l -95 105
+      a 14 14 0 0 1 -24 -10
+      l 5 -140
+      h -10
+      a 110 110 0 0 1 -110 -110
+      v -255
+      a 110 110 0 0 1 110 -110
+      z"
+      fill="none" stroke="#E4E4E4" stroke-width="42" stroke-linejoin="round" stroke-linecap="round"/>
+
+  <!-- Laptop -->
+  <rect x="420" y="410" width="290" height="195" rx="18" ry="18"
+        fill="none" stroke="#E4E4E4" stroke-width="30"/>
+  <path d="
+      M 388 640
+      h 354
+      l 28 42
+      a 14 14 0 0 1 -12 22
+      h -386
+      a 14 14 0 0 1 -12 -22
+      z"
+      fill="#E4E4E4"/>
+  <rect x="540" y="650" width="50" height="14" rx="7" fill="#141414"/>
+</svg>
